@@ -38,7 +38,7 @@ export default class Login extends Component{
       this.setState(state);
     }
     if(user.username === data.username && user.password === data.password) {
-      return <Redirect from="/" to="/home"/>
+      document.location = "/home"
     }
     event.preventDefault();
   }
